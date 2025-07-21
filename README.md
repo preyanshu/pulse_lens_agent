@@ -1,12 +1,29 @@
 
+# (PulseLens Agent)
 
-# System Architecture:
-![System Architecture](Static/s_design.png)
+PulseLens Agent is a cutting-edge solution that combines Video Magnification, Computer Vision, and Machine Learning to monitor both human and machine health. It uses the IO Net Agent to analyze original and magnified videos, generating vibration graphs and detailed reports. This enables non-contact, visual diagnostics for early anomaly detection and preventive maintenance across biomedical and industrial settings.
+
+# Working:
+
+Video Upload & Magnification
+The user uploads a video through the client. The Magnification Server processes it using Phase and Euclid-based video magnification to reveal subtle vibrations.
+
+Graph & Data Generation
+The processed video is sent to the Graph Generation Server, which extracts movement data and creates graphs. This data is then analyzed via IO Net Intelligence API.
+
+Insightful Report Creation
+The analyzed results are forwarded to the Report Generation Server, which compiles a human-readable report combining original and magnified data insights.
+
+<img width="1055" height="416" alt="image" src="https://github.com/user-attachments/assets/fcfdc73c-e441-4c4c-800b-5f6f32e9f308" />
+
 
 # Frontend:
+
+
 ![Frontend](Static/frontend.jpg)
 ![Frontend](Static/frontend3.png)
 ![Frontend](Static/frontend2.png)
+<img width="999" height="969" alt="image" src="https://github.com/user-attachments/assets/905cd7d9-f6b4-489c-abc3-73c2cf16662d" />
 
 
 # Analysis Report:
@@ -14,10 +31,6 @@
 
 # Live Magnification
 ![Live](Static/live.jpg)
-
-# Motion Amplification Vibration Monitoring System
-
-The Motion Amplification Vibration Monitoring System is an innovative project aimed at merging human and machine health monitoring using cutting-edge technology. By harnessing Video Magnification, Computer Vision, and Machine Learning Algorithms, our system provides comprehensive insights into machinery and human well-being.
 
 ## Features
 
@@ -33,6 +46,7 @@ The Motion Amplification Vibration Monitoring System is an innovative project ai
 - Flask: Python web framework for backend development.
 - OpenCV: Computer vision library for video processing.
 - TensorFlow/Keras: Machine learning framework for developing health analysis models.
+- IO Net Intelligence : For graph generation and analysis
 
 ## Show Stoppers
 
@@ -60,12 +74,17 @@ Harnessing Video Magnification, Computer Vision, and Machine Learning Algorithms
 The React frontend allows users to select magnification parameters and upload videos to Cloudinary. The uploaded video link is then sent to the magnification server for further processing. Before uploading, the video undergoes cropping and preprocessing to reduce resolution and frame rate, thus reducing the load on the magnification server. Additionally, it utilizes web sockets for real-time logs for video magnification.
 
 
-## Usage
+## Usage Magnification Server
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/preyanshu/video_magnification.git
+   git clone https://github.com/preyanshu/pulse_lens_agent.git
+   ```
+2. CD into Magnification_Server:
+
+   ```bash
+   cd ./Magnification_Server
    ```
 
 2. Install dependencies:
@@ -80,11 +99,38 @@ The React frontend allows users to select magnification parameters and upload vi
    python app.py
    ```
 
-4. Access the application through the provided URL in your web browser.
+   DO THE SAME WITH REPORT AND GRAPH GEN SERVER.
+
+   ## Usage Frontend
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/preyanshu/pulse_lens_agent.git
+   ```
+
+2. CD into Frontend:
+
+   ```bash
+   cd ./frontend
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm i
+   ```
+
+4. Run the application:
+
+   ```bash
+   npm start
+   ```
+
+4. Access the application through the provided URL in your web browser at port 3000.
 
 
-## Prototype Video For Magnification:
-https://youtu.be/Ni9JRBwZUow
+
 
 
 ## Contributing
