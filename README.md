@@ -20,17 +20,22 @@ The analyzed results are forwarded to the Report Generation Server, which compil
 # Frontend:
 
 
-![Frontend](Static/frontend.jpg)
-![Frontend](Static/frontend3.png)
-![Frontend](Static/frontend2.png)
+<img width="1280" height="585" alt="image" src="https://github.com/user-attachments/assets/03605437-64a4-4839-88d2-a45d97554d2f" />
+
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/162ef79e-ed6c-4352-b00b-4b0fc78664d4" />
+
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/5d28429e-348a-4e4c-8179-f203d8a14a19" />
+
 <img width="999" height="969" alt="image" src="https://github.com/user-attachments/assets/905cd7d9-f6b4-489c-abc3-73c2cf16662d" />
 
 
 # Analysis Report:
-![Analysis Report](Static/main.jpg)
+<img width="1280" height="686" alt="image" src="https://github.com/user-attachments/assets/88e778f4-1695-4550-9fad-60c455b22228" />
+
 
 # Live Magnification
-![Live](Static/live.jpg)
+<img width="1280" height="722" alt="image" src="https://github.com/user-attachments/assets/2385f15d-d93a-4682-8541-35a98a0838cb" />
+
 
 ## Features
 
